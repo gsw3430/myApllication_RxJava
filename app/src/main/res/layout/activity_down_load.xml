@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tl="http://schemas.android.com/apk/res-auto"
+    tools:context="com.vqsxb.video.DownLoadActivity"
+    android:orientation="vertical">
+
+    <!-- 遮挡状态栏透明的部分 -->
+    <include layout="@layout/title_layout_back" />
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/mine_content_tab"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tl:tabTextColor="@color/dark_grey"
+        tl:tabSelectedTextColor="@color/themeblue"
+        tl:tabIndicatorColor="@color/transprent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x1"
+        android:background="@color/gray_color_bg" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/mine_content_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</LinearLayout>

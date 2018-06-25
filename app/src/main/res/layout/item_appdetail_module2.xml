@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray"
+    android:layout_marginTop="@dimen/x20"
+    android:layout_marginLeft="@dimen/x20"
+    android:layout_marginRight="@dimen/x20">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x102"
+        android:background="@color/white">
+
+        <ImageView
+            android:id="@+id/rank_manager_item_icon"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@mipmap/icon"
+            />
+
+        <TextView
+            android:id="@+id/rank_manager_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rank_manager_item_icon"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/rank_manager_item_icon"
+            android:lines="1"
+            android:text="地球最后之日"
+            android:textColor="@color/text_comment_from_gray"
+            android:textSize="@dimen/x30"
+            />
+
+
+        <TextView
+            android:id="@+id/content_app_version"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rank_manager_item_icon"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/rank_manager_item_icon"
+            android:text="版本:1.0.1"
+            android:textSize="@dimen/x24"/>
+
+
+        <Button
+            android:id="@+id/down_manager_progress_button"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x32"
+            />
+    </RelativeLayout>
+
+
+
+
+    <RelativeLayout
+        android:id="@+id/re_2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x102"
+        android:background="@color/white"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/rank_manager_item_icon2"
+            android:layout_width="@dimen/x70"
+            android:layout_height="@dimen/x70"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/x20"
+            android:src="@mipmap/icon"
+            />
+
+        <TextView
+            android:id="@+id/rank_manager_title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/rank_manager_item_icon2"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/rank_manager_item_icon2"
+            android:lines="1"
+            android:text="地球最后之日"
+            android:textColor="@color/text_comment_from_gray"
+            android:textSize="@dimen/x30"
+            />
+
+
+        <TextView
+            android:id="@+id/content_app_version2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/rank_manager_item_icon2"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_toRightOf="@id/rank_manager_item_icon2"
+            android:text="版本:1.0.1"
+            android:textSize="@dimen/x24"/>
+
+
+        <Button
+            android:id="@+id/down_manager_progress_button2"
+            android:layout_width="@dimen/x110"
+            android:layout_height="@dimen/x60"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/x32"
+            />
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

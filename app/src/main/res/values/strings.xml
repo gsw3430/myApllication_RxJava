@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">My Application</string>
+
+    <string name="tab_name_recomment">推荐</string>
+    <string name="tab_name_ranking">榜单</string>
+    <string name="tab_name_discovery">发现</string>
+    <string name="tab_name_info">消息</string>
+    <string name="tab_name_mine">我的</string>
+
+    <!--榜单tab  text-->
+    <string-array name="ranklist_tabs">
+        <item>联机排行</item>
+        <item>单机排行</item>
+        <item>厂商</item>
+    </string-array>
+
+    <!--榜单tab  text-->
+    <string name="ranklist_tabs1">联机排行</string>
+    <string name="ranklist_tabs2">单机排行</string>
+    <string name="ranklist_tabs3">厂商排行</string>
+    <!--榜单子fragment  tab  text-->
+    <string name="ranklist_content1">下载榜</string>
+    <string name="ranklist_content2">新游榜</string>
+    <string name="ranklist_content3">预约榜</string>
+    <string name="ranklist_content4">畅销榜</string>
+
+    <!--榜单tab  text-->
+    <string name="txt_editorial">title</string>
+
+</resources>

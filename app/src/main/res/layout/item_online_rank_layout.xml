@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/x180"
+    android:background="@color/white">
+
+    <TextView
+        android:gravity="center"
+        android:id="@+id/rank_manager_item_number"
+        android:layout_width="@dimen/x60"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:lines="1"
+        android:textSize="@dimen/x28"
+        />
+
+    <ImageView
+        android:id="@+id/rank_manager_item_icon"
+        android:layout_width="@dimen/x120"
+        android:layout_height="@dimen/x120"
+        android:layout_centerVertical="true"
+        android:layout_toRightOf="@id/rank_manager_item_number"
+        />
+
+    <TextView
+        android:id="@+id/rank_manager_title"
+        android:layout_width="@dimen/x380"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/rank_manager_item_icon"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@id/rank_manager_item_icon"
+        android:lines="1"
+        android:text="hhhhhhhhhhhhhhhhhhhhhhhhh"
+        android:textColor="@color/text_comment_from_gray"
+        android:textSize="@dimen/x30"
+        />
+
+    <com.vqsxb.widget.MyRatingBar
+        android:id="@+id/rank_manager_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_marginTop="@dimen/x12"
+        android:layout_toRightOf="@id/rank_manager_item_icon"
+        app:clickable="false"
+        app:starCount="5"
+        app:starEmpty="@mipmap/rating_empty"
+        app:starFill="@mipmap/rating_fill"
+        app:starHalf="@mipmap/rating_fill"
+        app:starImageSize="@dimen/x18"
+        app:starStep="1"
+        tools:ignore="RtlHardcoded"/>
+
+
+    <TextView
+        android:id="@+id/rank_manager_score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/x14"
+        android:layout_toRightOf="@id/rank_manager_star"
+        android:lines="1"
+        android:textColor="@color/moderate_grey"
+        android:textSize="@dimen/x20"
+        tools:ignore="RtlHardcoded"/>
+
+
+    <com.vqsxb.widget.FlowLayout
+        android:id="@+id/content_app_head_tag_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/rank_manager_item_icon"
+        android:layout_marginLeft="@dimen/x20"
+        android:layout_toRightOf="@id/rank_manager_item_icon"
+        tools:ignore="RtlHardcoded">
+
+    </com.vqsxb.widget.FlowLayout>
+
+    <TextView
+        android:id="@+id/down_manager_progress_button"
+        android:layout_width="@dimen/x106"
+        android:layout_height="@dimen/x54"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/x10"
+        android:background="@drawable/down_button_bg"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:text="下载"
+        />
+</RelativeLayout>

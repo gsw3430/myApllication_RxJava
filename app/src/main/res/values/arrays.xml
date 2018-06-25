@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="main_titles_arrays">
+        <item>@string/tab_name_recomment</item>
+        <item>@string/tab_name_ranking</item>
+        <item>@string/tab_name_discovery</item>
+        <item>@string/tab_name_info</item>
+        <item>@string/tab_name_mine</item>
+    </string-array>
+</resources>

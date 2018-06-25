@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="@dimen/x600"
+    android:layout_height="@dimen/x284"
+    android:background="@color/white"
+    android:paddingLeft="@dimen/x20"
+    android:paddingRight="@dimen/x20"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+       >
+        <ImageView
+            android:id="@+id/module3_item_icon"
+            android:layout_width="@dimen/x80"
+            android:layout_height="@dimen/x80"
+            android:layout_centerVertical="true"
+            android:background="@color/white"/>
+
+        <TextView
+            android:id="@+id/module3_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/module3_item_icon"
+            android:layout_toRightOf="@id/module3_item_icon"
+            android:lines="1"
+            android:paddingLeft="@dimen/x20"
+            android:text="逃离杀戮营"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x28"
+            />
+
+        <com.vqsxb.widget.StarRatingBar
+            android:id="@+id/module3_item_starratingbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/module3_item_icon"
+            android:layout_toRightOf="@id/module3_item_icon"
+            android:paddingLeft="@dimen/x20"
+            app:clickable="false"
+            app:starCount="5"
+            app:starEmpty="@mipmap/rating_empty"
+            app:starFill="@mipmap/rating_fill"
+            app:starHalf="@mipmap/rating_fill"
+            app:starImageSize="@dimen/x18"
+            app:starStep="1"
+            >
+        </com.vqsxb.widget.StarRatingBar>
+
+        <TextView
+            android:id="@+id/module3_item_score"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/module3_item_icon"
+            android:layout_toRightOf="@id/module3_item_starratingbar"
+            android:lines="1"
+            android:textColor="@color/moderate_grey"
+            android:textSize="@dimen/x20"/>
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/module3_item_content"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/x90"
+        android:lines="2"
+        android:paddingTop="@dimen/x8"
+        android:textColor="@color/moderate_grey"
+        android:textSize="@dimen/x30"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/x10">
+
+        <ImageView
+            android:padding="@dimen/x10"
+            android:id="@+id/module3_item_dianzan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:src="@mipmap/dianzan_empty"/>
+
+        <TextView
+            android:id="@+id/module3_item_username"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:lines="1"
+            android:text="来自:%1$s"
+            android:textColor="@color/text_black"
+            android:textSize="@dimen/x24"/>
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ToolBar -->
+    <dimen name="toolbar_margin_top">0dp</dimen>
+    <dimen name="toolbar_height">56dp</dimen>
+    <dimen name="tab_bar_margin_top">56dp</dimen>
+</resources>

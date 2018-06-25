@@ -1,0 +1,60 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="BaseTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:fitsSystemWindows">false</item>
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimary</item>
+        <item name="colorAccent">@color/themeblue</item>
+        <item name="android:windowBackground">@android:color/white</item>
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+
+    <style name="AppBaseTheme" parent="BaseTheme"></style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar"/>
+
+    <!-- 推荐安装DiaLog样式 -->
+    <style name="recommend_isntall_style" parent="@android:style/Theme.Holo.DialogWhenLarge.NoActionBar">
+        <item name="android:windowFrame">@null</item>
+        <!-- 边框 -->
+        <item name="android:windowIsFloating">true</item>
+        <!-- 是否浮现在activity之上 -->
+        <item name="android:windowIsTranslucent">false</item>
+        <!-- 半透明 -->
+        <item name="android:windowNoTitle">true</item>
+        <!-- 无标题 -->
+        <item name="android:backgroundDimEnabled">true</item>
+        <!-- 模糊 -->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <!-- 背景透明 -->
+    </style>
+
+    <declare-styleable name="MyRatingBar">
+        <!--星星图片的尺寸-->
+        <attr name="starImageSize" format="dimension" />
+        <!--星星图片之间的间距-->
+        <attr name="starPadding" format="dimension" />
+        <!--星星的数目-->
+        <attr name="starCount" format="integer" />
+        <!--空白星星的图片-->
+        <attr name="starEmpty" format="reference" />
+        <!--选中时星星的图片-->
+        <attr name="starFill" format="reference" />
+        <!--半颗星星的图片-->
+        <attr name="starHalf" format="reference" />
+        <!--能否被点击-->
+        <attr name="clickable" format="boolean" />
+        <!--当前进度的值-->
+        <attr name="starStep" format="float" />
+        <!--枚举值判断是整星还是半颗星-->
+        <attr name="stepSize">
+            <enum name="Half" value="0" />
+            <enum name="Full" value="1" />
+        </attr>
+    </declare-styleable>
+
+</resources>

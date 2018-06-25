@@ -1,0 +1,327 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.vqsxb.activity.DetailsActivity"
+    tools:openDrawer="start"
+    android:background="@color/pressed_color"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/toolbar_height"
+            android:layout_marginTop="@dimen/toolbar_margin_top"
+            app:theme="@style/AppTheme.AppBarOverlay">
+
+            <RelativeLayout
+                android:id="@+id/lineTop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/x102"
+                android:background="@color/themeblue"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/vqs_detail_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:drawableLeft="@mipmap/return_white"
+                    android:drawablePadding="@dimen/x10"
+                    android:gravity="center_vertical"
+                    android:maxEms="14"
+                    android:maxLines="1"
+                    android:ellipsize="end"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/x32"/>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:orientation="horizontal"
+                    >
+
+                    <ImageView
+                        android:id="@+id/app_details_complaints"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/x30"
+                        android:src="@mipmap/complaints"/>
+
+                    <ImageView
+                        android:id="@+id/app_details_share"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/x30"
+                        android:src="@mipmap/share"/>
+                </LinearLayout>
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ughubguhbugubuihjbujiuj"/>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+        <!--包含要折叠的部分-->
+        <android.support.design.widget.AppBarLayout
+            android:id="@+id/appbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white">
+            <!--要折叠的部分-->
+            <android.support.design.widget.CollapsingToolbarLayout
+                android:id="@+id/collapse_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:contentScrim="@color/colorPrimary"
+                app:layout_scrollFlags="scroll|exitUntilCollapsed|snap">
+
+                <LinearLayout
+                    android:id="@+id/lineHead"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <com.vc.play.mylibrary.JCVideoPlayerStandard
+                        android:id="@+id/videoplayer"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x360"
+                        android:visibility="invisible"
+                        />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/x220">
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="@dimen/x20"
+                            android:layout_marginTop="@dimen/x30"
+                            android:layout_toRightOf="@+id/app_details_appicon">
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_centerVertical="true"
+                                android:gravity="center|left"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/info_gamename"
+                                    android:layout_height="wrap_content"
+                                    android:ellipsize="end"
+                                    android:lineSpacingExtra="3dp"
+                                    android:maxLines="2"
+                                    android:layout_width="200dp"
+                                    android:textColor="@color/text_comment_from_gray"
+                                    android:textSize="@dimen/x32"/>
+
+                                <RelativeLayout
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content">
+
+
+                                    <com.vqsxb.widget.MyRatingBar
+                                        android:id="@+id/rank_manager_star"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginTop="@dimen/x12"
+                                        app:clickable="false"
+                                        app:starCount="5"
+                                        app:starEmpty="@mipmap/rating_empty"
+                                        app:starFill="@mipmap/rating_fill"
+                                        app:starHalf="@mipmap/rating_fill"
+                                        app:starImageSize="@dimen/x18"
+                                        app:starStep="1"
+                                        android:visibility="invisible"
+                                        tools:ignore="RtlHardcoded"/>
+
+                                    <TextView
+                                        android:id="@+id/rank_manager_score"
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:layout_centerVertical="true"
+                                        android:layout_marginLeft="@dimen/x14"
+                                        android:layout_toRightOf="@id/rank_manager_star"
+                                        android:lines="1"
+                                        android:textColor="@color/light_gray"
+                                        android:textSize="@dimen/x20"
+                                        tools:ignore="RtlHardcoded"/>
+
+                                </RelativeLayout>
+
+
+                                <TextView
+                                    android:id="@+id/info_paly_num"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/x5"
+                                    android:textColor="@color/light_gray"
+                                    android:textSize="11dp"/>
+
+                                <TextView
+                                    android:id="@+id/info_game_type"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_marginTop="@dimen/x10"
+                                    android:textColor="@color/themeblue"
+                                    android:textSize="11dp"
+                                    android:visibility="invisible"/>
+
+                            </LinearLayout>
+                        </RelativeLayout>
+
+                        <ImageView
+                            android:id="@+id/app_details_appicon"
+                            android:layout_width="@dimen/x160"
+                            android:layout_height="@dimen/x160"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginStart="15dp"/>
+
+                        <Button
+                            android:id="@+id/app_details_score_tv"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/x100"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="13dp"
+                            android:background="@drawable/vcam_entry_border"
+                            android:gravity="center"
+                            android:text="预约\n修改"
+                            android:textColor="@color/white"
+                            android:visibility="gone"/>
+
+                        <Button
+                            android:id="@+id/app_details_score_tv2"
+                            android:layout_width="@dimen/x100"
+                            android:layout_height="@dimen/x100"
+                            android:layout_alignParentEnd="true"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_marginEnd="13dp"
+                            android:layout_marginRight="13dp"
+                            android:background="@drawable/vcam_entry_border2"
+                            android:gravity="center"
+                            android:text="取消\n预约"
+                            android:textColor="@color/white"
+                            android:visibility="gone"/>
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </android.support.design.widget.CollapsingToolbarLayout>
+
+            <!--要停靠的部分-->
+            <android.support.design.widget.TabLayout
+                android:id="@+id/user_detail_tab"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabIndicatorColor="@color/themeblue"
+                app:tabSelectedTextColor="@color/themeblue"
+                app:tabTextColor="@color/dark_grey"/>
+
+        </android.support.design.widget.AppBarLayout>
+
+        <com.vqsxb.widget.VqsViewPager
+            android:id="@+id/user_detail_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_behavior="@string/appbar_scrolling_view_behavior"
+            />
+<!--
+
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="@dimen/x112"
+            android:layout_height="@dimen/x112"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="15dp"
+            android:layout_marginRight="15dp"
+            android:src="@mipmap/qianbi_1"
+            app:backgroundTint="@color/themeblue"
+            app:elevation="4dp"
+            app:fabSize="normal"
+            app:layout_anchor="@+id/rl_recycler"
+            app:layout_anchorGravity="center_vertical|right" />
+-->
+
+        <ImageButton
+            android:id="@+id/floatingActionButton"
+            android:layout_width="@dimen/x112"
+            android:layout_height="@dimen/x112"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:background="@mipmap/qianbi_3"
+            android:visibility="gone"/>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cardView"
+            animateLayoutChanges="true"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/x100"
+            android:layout_alignParentBottom="true"
+            android:layout_gravity="bottom"
+            android:clickable="true"
+            android:foreground="?attr/selectableItemBackground"
+            app:cardElevation="@dimen/x30"
+            app:cardPreventCornerOverlap="true"
+            android:visibility="gone"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/tv_favor"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x100"
+                    android:layout_weight="1"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:text="加入收藏"
+                    android:textSize="16dp"/>
+
+                <Button
+                    android:id="@+id/down_details_button"
+                    android:layout_width="0dp"
+                    android:layout_height="@dimen/x100"
+                    android:layout_weight="1"
+                    android:background="@color/text_blue"
+                    android:gravity="center"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </android.support.design.widget.CoordinatorLayout>
+
+</LinearLayout>

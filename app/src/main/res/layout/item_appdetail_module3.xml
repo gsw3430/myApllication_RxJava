@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_content_tese"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/gray"
+    android:layout_marginTop="@dimen/x20"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:background="#5DBBE3">
+
+        <TextView
+            android:id="@+id/tv_ll_content_tese"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginTop="@dimen/x20"
+            android:text="修改了些什么"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x30"/>
+
+
+        <com.vqsxb.widget.CollapsibleTextView2
+            android:id="@+id/content_tese"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/x20"
+            android:layout_marginRight="@dimen/x20"
+            android:layout_marginBottom="@dimen/x20"
+            android:ellipsize="end"
+            android:maxLines="3"
+            android:lineSpacingExtra="@dimen/x8"
+            android:text="上线送VIP5,充值比例1:400,上线送80000钻石!"
+            android:textColor="@color/white"
+            android:textSize="@dimen/x26"/>
+    </LinearLayout>
+
+</LinearLayout>

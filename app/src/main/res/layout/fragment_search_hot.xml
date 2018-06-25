@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/search_hote_tv"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/x120"
+        android:gravity="center_vertical"
+        android:paddingLeft="@dimen/x20"
+        android:text="热门搜索"
+        android:textColor="@color/dark_grey"
+        android:textSize="@dimen/x30"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5px"
+        android:background="@color/text_explain_gray"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/search_hote_grid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#C1C1C1"
+        android:overScrollMode="never"/>
+
+</LinearLayout>
